@@ -16,9 +16,7 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
-      - name: Project Version
-        run: gradle printVersion
       - name: Publish package
-        run: gradle build publish
+        run: gradle printVersion build publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
