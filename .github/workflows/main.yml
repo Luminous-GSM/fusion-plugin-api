@@ -16,6 +16,8 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
+      - name: Project Version
+        run: gradle printVersion
       - name: Publish package
         run: gradle build publish
         env:
