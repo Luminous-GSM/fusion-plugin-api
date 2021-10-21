@@ -34,8 +34,8 @@ publishing {
         }
     }
     publications {
-        mavenJava(MavenPublication) {
-            from components.java
+        gpr(MavenPublication) {
+            from(components.java)
         }
     }
 }
