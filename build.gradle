@@ -23,11 +23,16 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/Luminous-GSM/fusion-plugin-api")
+            url = uri("https://maven.pkg.github.com/luminous-gsm/fusion-plugin-api")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
             }
+        }
+    }
+    publications {
+        gpr(MavenPublication) {
+            from(components.java)
         }
     }
 }
