@@ -1,12 +1,12 @@
 package models;
 
-public class HealthData {
+public class HealthResult {
     private String status;
 
-    public HealthData() {
+    public HealthResult() {
     }
 
-    public HealthData(String status) {
+    public HealthResult(String status) {
         this.status = status;
     }
 
