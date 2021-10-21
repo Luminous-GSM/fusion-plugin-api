@@ -1,9 +1,10 @@
 plugins {
     id 'java'
+    id 'maven-publish'
 }
 
 group 'com.luminous-gsm'
-version '1.0-SNAPSHOT'
+version '0.0.1-SNAPSHOT'
 
 repositories {
     mavenCentral()
@@ -16,4 +17,17 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+publishing {
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/Luminous-GSM/fusion-plugin-api")
+            credentials {
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
 }
