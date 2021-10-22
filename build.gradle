@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.luminous-gsm'
-version '0.0.3'
+version '0.0.7'
 
 repositories {
     mavenCentral()
@@ -15,7 +15,7 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
 
     // https://mvnrepository.com/artifact/org.pf4j/pf4j
-    implementation group: 'org.pf4j', name: 'pf4j', version: '3.5.0'
+    compileOnly group: 'org.pf4j', name: 'pf4j', version: '3.6.0'
 }
 
 test {
