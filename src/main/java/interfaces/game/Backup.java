@@ -1,7 +1,8 @@
 package interfaces.game;
 
-import models.BackupResult;
+import models.backup.BackupResult;
+import org.pf4j.ExtensionPoint;
 
-public interface Backup {
+public interface Backup extends ExtensionPoint {
     BackupResult backup();
 }

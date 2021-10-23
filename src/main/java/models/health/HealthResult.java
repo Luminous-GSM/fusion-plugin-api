@@ -1,4 +1,4 @@
-package models;
+package models.health;
 
 public class HealthResult {
     private String status;

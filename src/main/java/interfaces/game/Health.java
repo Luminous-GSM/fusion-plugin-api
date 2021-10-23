@@ -1,7 +1,8 @@
 package interfaces.game;
 
-import models.HealthResult;
+import models.health.HealthResult;
+import org.pf4j.ExtensionPoint;
 
-public interface Health {
+public interface Health extends ExtensionPoint {
     HealthResult health();
 }

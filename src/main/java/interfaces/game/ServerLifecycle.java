@@ -1,5 +1,7 @@
 package interfaces.game;
 
-public interface ServerLifecycle {
+import org.pf4j.ExtensionPoint;
+
+public interface ServerLifecycle extends ExtensionPoint {
 
 }
